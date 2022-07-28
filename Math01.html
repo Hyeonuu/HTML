@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        function compareNumbers(a,b) {
+            return a - b;
+        }
+        let lotto = [];
+        for(let i=0; i<6; i++) {
+            lotto[i] = parseInt(Math.random()*45) +1;   
+                function sameNum (n) {
+                    for (var i = 0; i < lotto.length; i++) {
+                        if (n === lotto[i]) {
+                            return true;      
+                                        }    
+                                    }   
+                            return false;  
+                                }
+            }
+        let a = lotto.sort(compareNumbers);
+        for(let i=0; i<lotto.length; i++) {
+            document.write(lotto[i] + '<br>')
+        }
+    </script>
+</head>
+<body>   
+</body>
+</html>
